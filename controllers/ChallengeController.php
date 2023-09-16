@@ -5,9 +5,7 @@
         $challenge_index = $_POST['challenge_index'];
         $challenge = $challenges[$challenge_index];
 
-        if ($challenge['has_answer'] != false) {
-            echo $challenges[$challenge_index]['question'];        
-        }
+        echo $challenges[$challenge_index]['question'];        
     }
     else if (isset($_POST['verify_answer'])) {
         $challenge_index = $_POST['challenge_index'];

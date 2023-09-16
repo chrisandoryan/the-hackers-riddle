@@ -154,8 +154,8 @@ require_once("config/challenges.php");
                 verify_answer: true
             },
             function(data, status) {
-                if (data === "success") {
-                    doTheBoom("Pwned!!!");
+                if (data === "correct") {
+                    doTheBoom("Hacked!!! Sepuh...");
                 } else {
                     doTheBoom("Wrong :(");
                 }
